@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="661.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="badcoinfxml.ProfileController">
+  <children>
+    <AnchorPane id="anchorPane2" layoutX="50.0" layoutY="35.0" prefHeight="237.0" prefWidth="500.0" styleClass="null">
+      <children>
+        <VBox id="VBox" alignment="CENTER" layoutX="40.0" layoutY="0.0" prefHeight="237.0" prefWidth="420.0">
+          <children>
+            <AnchorPane id="anchorPane3" prefHeight="222.0" prefWidth="420.0">
+              <children>
+                <Label id="label2" layoutX="11.0" layoutY="61.0" text="Public Key" />
+                <TextArea fx:id="publicKey" editable="false" layoutX="110.0" layoutY="50.0" prefHeight="43.0" prefWidth="271.0" wrapText="true" />
+                <Label id="label3" layoutX="13.0" layoutY="109.0" text="Private Key" />
+                <Label id="label1" fx:id="name" layoutX="13.0" layoutY="7.0" prefHeight="43.0" prefWidth="194.0" text="">
+                  <font>
+                    <Font name="Tahoma" size="22.0" />
+                  </font>
+                </Label>
+                <TextField id="textField2" fx:id="balance" editable="false" layoutX="110.0" layoutY="165.0" prefWidth="271.0">
+                  <effect>
+                    <InnerShadow color="#9f9f9f" />
+                  </effect>
+                </TextField>
+                <Label id="label5" layoutX="10.0" layoutY="168.0" text="Balance" />
+                <TextArea fx:id="privateKey" editable="false" layoutX="110.0" layoutY="98.0" prefHeight="43.0" prefWidth="271.0" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <Button layoutX="548.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#handleLogout" text="Logout" />
+    <AnchorPane layoutX="89.0" layoutY="272.0" prefHeight="180.0" prefWidth="425.0">
+      <children>
+        <Hyperlink layoutX="15.0" layoutY="33.0" onMouseClicked="#handleMakeTransaction" text="Make transaction" />
+        <Hyperlink layoutX="15.0" layoutY="76.0" onMouseClicked="#handleOtherUsersLink" text="View other users" />
+        <Hyperlink layoutX="15.0" layoutY="116.0" onMouseClicked="#handleCheckValidity" text="Check blockchain validity" />
+        <Label fx:id="validityLabel" layoutX="213.0" layoutY="120.0" prefWidth="194.0" text="" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

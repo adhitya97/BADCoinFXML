@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="badcoinfxml.LoginController">
+  <children>
+    <AnchorPane id="anchorPane2" prefHeight="300.0" prefWidth="500.0" styleClass="null" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" prefHeight="300.0" prefWidth="421.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <AnchorPane id="anchorPane3" prefHeight="180.0" prefWidth="430.0">
+              <children>
+                <Label id="label2" layoutX="14.0" layoutY="57.0" text="Username" />
+                <TextField id="textField1" fx:id="userId" layoutX="16.0" layoutY="77.0" prefWidth="200.0">
+                  <effect>
+                    <InnerShadow>
+                      <color>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x1" />
+                      </color>
+                    </InnerShadow>
+                  </effect>
+                </TextField>
+                <Label id="label3" layoutX="16.0" layoutY="116.0" text="Password" />
+                <PasswordField id="passwordField1" fx:id="password" layoutX="14.0" layoutY="136.0" prefWidth="200.0">
+                  <effect>
+                    <InnerShadow color="$x1" />
+                  </effect>
+                </PasswordField>
+                <Label id="label1" layoutX="16.0" layoutY="14.0" prefHeight="43.0" prefWidth="194.0" text="Sign in">
+                  <font>
+                    <Font name="Tahoma" size="22.0" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <HBox id="hBox1" alignment="CENTER" layoutX="40.0" prefHeight="25.0" prefWidth="418.0" AnchorPane.bottomAnchor="177.0">
+      <children>
+        <Label id="label4" fx:id="errorMessage" />
+      </children>
+    </HBox>
+    <Button fx:id="login" layoutX="152.0" mnemonicParsing="false" onMouseClicked="#handleLoginSubmit" prefHeight="67.0" prefWidth="194.0" text="Continue" AnchorPane.bottomAnchor="92.0">
+      <effect>
+        <Glow level="0.18679245283018867" />
+      </effect>
+      <font>
+        <Font name="Tahoma" size="18.0" />
+      </font>
+    </Button>
+    <Hyperlink id="errorMessage" alignment="CENTER" layoutX="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleCreateUser" prefWidth="194.0" text="New user? Create account" textAlignment="LEFT" AnchorPane.bottomAnchor="63.0" />
+  </children>
+</AnchorPane>

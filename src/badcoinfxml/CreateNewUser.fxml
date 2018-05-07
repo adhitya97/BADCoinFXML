@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="badcoinfxml.CreateNewUserController">
+  <children>
+    <AnchorPane id="anchorPane2" layoutX="50.0" layoutY="82.0" prefHeight="237.0" prefWidth="500.0" styleClass="null" />
+    <VBox id="VBox" alignment="CENTER" prefHeight="237.0" prefWidth="420.0" AnchorPane.bottomAnchor="130.5" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="69.5">
+      <children>
+        <AnchorPane id="anchorPane3" prefHeight="222.0" prefWidth="420.0">
+          <children>
+            <Label id="label2" layoutX="11.0" layoutY="50.0" text="Enter username" />
+            <TextField id="textField1" fx:id="username" layoutX="11.0" layoutY="70.0" onKeyPressed="#handleUsernameModifiedKey" onMouseExited="#handleUsernameModified" prefWidth="200.0">
+              <effect>
+                <InnerShadow>
+                  <color>
+                    <Color blue="0.625" green="0.625" red="0.625" fx:id="x1" />
+                  </color>
+                </InnerShadow>
+              </effect>
+            </TextField>
+            <Label id="label3" layoutX="13.0" layoutY="109.0" text="Choose a password" />
+            <PasswordField id="passwordField1" fx:id="password" layoutX="11.0" layoutY="129.0" prefWidth="200.0">
+              <effect>
+                <InnerShadow color="$x1" />
+              </effect>
+            </PasswordField>
+            <Label id="label1" layoutX="13.0" layoutY="7.0" prefHeight="43.0" prefWidth="194.0" text="Sign up">
+              <font>
+                <Font name="Tahoma" size="22.0" />
+              </font>
+            </Label>
+            <Label id="label4" fx:id="newUsernameMessage" layoutX="222.0" layoutY="70.0" prefWidth="172.0" text="" />
+            <TextField id="textField2" fx:id="email" layoutX="10.0" layoutY="188.0" onKeyReleased="#handleEmailValidKey" prefWidth="200.0">
+              <effect>
+                <InnerShadow color="#9f9f9f" />
+              </effect>
+            </TextField>
+            <Label id="label5" layoutX="10.0" layoutY="168.0" text="Enter email" />
+            <Hyperlink layoutX="337.0" layoutY="18.0" onMouseClicked="#handleLogin" text="Login" />
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+    <Button id="createbutton" disable="false" layoutX="192.0" mnemonicParsing="false" onMouseClicked="#handleSubmitCreateUser" prefHeight="43.0" prefWidth="116.0" text="Create" AnchorPane.bottomAnchor="75.0" />
+  </children>
+</AnchorPane>

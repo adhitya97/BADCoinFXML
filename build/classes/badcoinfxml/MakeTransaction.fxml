@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" disable="false" prefHeight="539.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="badcoinfxml.MakeTransactionController">
+  <children>
+    <Button layoutX="503.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#handleLogout" text="Logout" />
+    <Hyperlink layoutX="436.0" layoutY="18.0" onMouseClicked="#handleBack" text="Home" />
+    <Label layoutX="24.0" layoutY="22.0" prefWidth="157.0" text="Make Transaction">
+      <font>
+        <Font name="Tahoma" size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="24.0" layoutY="76.0" text="Available balance" />
+    <TextField fx:id="balance" editable="false" layoutX="221.0" layoutY="73.0" prefWidth="264.0" />
+    <Label layoutX="24.0" layoutY="145.0" text="Recipient's public key" />
+    <TextArea fx:id="publicKey" layoutX="221.0" layoutY="132.0" onKeyPressed="#handleUsernameKey" onMouseExited="#handleUsername" prefHeight="46.0" prefWidth="264.0" wrapText="true" />
+    <Label layoutX="24.0" layoutY="219.0" text="Recipent's username" />
+    <TextField fx:id="username" editable="false" layoutX="221.0" layoutY="216.0" prefWidth="264.0" />
+    <Label layoutX="24.0" layoutY="282.0" text="Amount" />
+    <TextField fx:id="amount" layoutX="218.0" layoutY="279.0" onKeyReleased="#handleAmountValidKey" prefWidth="137.0" />
+    <Label fx:id="validAmount" layoutX="373.0" layoutY="273.0" prefHeight="36.0" prefWidth="157.0" text="" wrapText="true" />
+    <Button fx:id="submit" disable="true" layoutX="264.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#handleSubmit" text="Submit" />
+    <CheckBox fx:id="confirmation" layoutX="120.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#handleConfirmation" text="I am sure I want to complete the above transaction" />
+    <Label fx:id="transactionStatus" alignment="CENTER" layoutX="176.0" layoutY="465.0" prefWidth="249.0" text="" />
+  </children>
+</AnchorPane>

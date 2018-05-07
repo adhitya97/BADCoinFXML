@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="badcoinfxml.ViewUsersController">
+  <children>
+    <Label layoutX="28.0" layoutY="14.0" prefHeight="42.0" prefWidth="166.0" text="Other Users">
+      <font>
+        <Font name="Tahoma" size="20.0" />
+      </font>
+    </Label>
+    <Button layoutX="501.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#handleLogout" text="Logout" />
+    <Hyperlink layoutX="434.0" layoutY="28.0" onMouseClicked="#handleBack" text="Home" />
+    <TextArea id="backLink" fx:id="userDetails" layoutX="27.0" layoutY="77.0" prefHeight="291.0" prefWidth="548.0" wrapText="true" />
+  </children>
+</AnchorPane>
